@@ -1,3 +1,3 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.0
 USER 1001
-CMD bash -c "while true; do echo hahahaha; sleep 5; done"
+CMD bash -c "while true; do echo handsome-jamah; sleep 5; done"
