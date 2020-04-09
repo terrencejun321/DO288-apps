@@ -1,13 +1,13 @@
 kind: "BuildConfig"
 apiVersion: "build.openshift.io/v1"
 metadata:
-  name: "simple-pipeline" 1
+  name: "simple-pipeline"
 spec:
   source:
-    contextDir: simple-pipeline 2
+    contextDir: simple-pipeline
     git:
-      uri: "https://github.com/terrencejun321/DO288-apps" 3
+      uri: "https://github.com/terrencejun321/DO288-apps"
       ref: "simple-pipeline"
   strategy:
-    jenkinsPipelineStrategy: 4
+    jenkinsPipelineStrategy:
     type: JenkinsPipeline
