@@ -1,0 +1,13 @@
+kind: "BuildConfig"
+apiVersion: "build.openshift.io/v1"
+metadata:
+  name: "simple-pipeline" 1
+spec:
+  source:
+    contextDir: simple-pipeline 2
+    git:
+      uri: "https://github.com/terrencejun321/DO288-apps" 3
+      ref: "simple-pipeline"
+  strategy:
+    jenkinsPipelineStrategy: 4
+    type: JenkinsPipeline
